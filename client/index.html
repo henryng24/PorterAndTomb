@@ -2,20 +2,23 @@
 <html ng-app='myApp'>
   <head>
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="lib/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="app/app.js"></script>
-    <script src="app/controllers/UsersCtrl.js"></script>
+    <script src="app/factory/factory.js"></script>
+    <script src="app/controllers/allStoriesController.js"></script>
     <script src="app/controllers/appRoutes.js"></script>
 
-    <meta charset="utf-8" />
-    <title></title>
+
   </head>
-  <body ng-app="myApp" ng-controller="MainController">
+  <body ng-app="myApp">
     <!-- the ng-view directive is where our templates will be loaded into when navigated to -->
+    <a ui-sref="allnews" class="btn btn-primary">All News</a>
+    <a ui-sref="personal" class="btn btn-primary">Personal News</a>
+    <div ng-henry></div>
     <div ui-view></div>
+
 
   </body>
 </html>

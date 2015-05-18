@@ -1,17 +1,17 @@
 angular.module('appRoutes', ['ui.router'])
 .config(function($stateProvider, $urlRouterProvider) {
 
-  $urlRouterProvider.otherwise("/");
-
   $stateProvider
-    .state('index', {
-      url: "",
-      templateUrl: "/app/views/home.html"
+    .state('allnews', {
+      url: "/allnews",
+      templateUrl: "/app/views/allnews.html"
     })
 
-    .state('users', {
-      url: "/users",
-      templateUrl: "/app/views/users.html"
+    .state('personal', {
+      url: "/personal",
+      templateUrl: "/app/views/personal.html"
     });
+
+    $urlRouterProvider.otherwise("/");
     
 });
